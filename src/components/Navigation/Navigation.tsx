@@ -16,6 +16,7 @@ const Navigation = () => {
       {NavItems.map((item, index) => {
         return (
           <Link
+            key={index}
             className={
               pathname === item.path
                 ? itemClassName + ' active'

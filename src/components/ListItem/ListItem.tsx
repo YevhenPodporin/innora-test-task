@@ -2,19 +2,23 @@ import React from "react";
 import { TodoListItem } from "../../redux/reducers/TodoListSlice";
 import "./ListItem.scss";
 import DeleteOutlineTwoToneIcon from '@mui/icons-material/DeleteOutlineTwoTone';
+import RestoreIcon from '@mui/icons-material/Restore';
 
 type Props = {
   item: TodoListItem;
   action?: (id: TodoListItem["id"]) => void;
-  onDragStarted?: (started: boolean) => void
+  onDragStarted?: (started: boolean) => void;
+  type: 'delete' | 'restore'
 };
 
 const ListItem: React.FC<Props> = ({
                                      item,
                                      action,
-                                     onDragStarted
+                                     onDragStarted,
+                                     type
                                    }) => {
   const {title, id, description} = item;
+  const IconComponent = type === 'delete' ? DeleteOutlineTwoToneIcon : RestoreIcon;
 
   return (
     <div
@@ -33,7 +37,7 @@ const ListItem: React.FC<Props> = ({
         <p>{description}</p>
       </div>
       <div className={"actions"}>
-        <DeleteOutlineTwoToneIcon
+        <IconComponent
           color={'info'}
           onClick={() => action && action(id)}
           className={"remove-icon"}

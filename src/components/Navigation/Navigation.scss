@@ -6,6 +6,11 @@
   justify-content: center;
   box-shadow: 0 10px 20px #1F2937;
   font-size: calc(16px + 16 * (100vw / 1280));
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 2;
+  background: #FFFFFF;
   .nav-list_item {
     line-height: 100%;
     display: inline-block;

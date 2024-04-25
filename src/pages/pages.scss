@@ -1,12 +1,14 @@
+h2{
+  padding: 20px 10px;
+  text-align: center;
+}
 .todo_list {
-  padding: 0 20px;
-  margin-top: 40px;
+  padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   justify-content: space-evenly;
   gap: 20px;
   row-gap: 40px;
-
   .delete-icon__fixed {
     transition: all 0.3s;
     padding: 20px;

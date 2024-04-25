@@ -13,9 +13,10 @@ const All = () => {
 
   useEffect(() => {
     if (!all.length) {
+      console.log('1111')
       dispatch(todoListSlice.actions.setTodoList(TodoListJson));
     }
-  }, []);
+  }, [dispatch, all.length]);
 
   const deleteElement = (id: TodoListItem["id"]) => {
     dispatch(todoListSlice.actions.remove(id));
@@ -30,6 +31,7 @@ const All = () => {
     <div className={"todo_list"}>
       {all.map((item) => {
         return <ListItem
+          type={'delete'}
           item={item}
           key={item.id}
           action={deleteElement}

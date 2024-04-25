@@ -17,8 +17,7 @@ root.render(
     <BrowserRouter basename="/">
       <App />
     </BrowserRouter>
-    ,
-  </Provider>,
+  </Provider>
 );
 
 reportWebVitals();
