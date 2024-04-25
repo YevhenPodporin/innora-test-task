@@ -16,7 +16,7 @@ const All = () => {
       console.log('1111')
       dispatch(todoListSlice.actions.setTodoList(TodoListJson));
     }
-  }, [dispatch, all.length]);
+  }, []);
 
   const deleteElement = (id: TodoListItem["id"]) => {
     dispatch(todoListSlice.actions.remove(id));
@@ -38,7 +38,6 @@ const All = () => {
           onDragStarted={onDragStarted}
         />;
       })}
-
       <div
         className={showDeleteIcon ? 'delete-icon__fixed visible' : 'delete-icon__fixed hidden'}
         onDragOver={e => e.preventDefault()}
@@ -49,7 +48,6 @@ const All = () => {
           className={"remove-icon"}
         />
       </div>
-
     </div>
   );
 };
