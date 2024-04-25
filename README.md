@@ -1,5 +1,6 @@
 # Getting Started
-
+## At the first install dependencies
+### `npm install`
 ## Available Scripts
 
 In the project directory, you can run:
