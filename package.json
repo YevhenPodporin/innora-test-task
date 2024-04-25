@@ -1,0 +1,54 @@
+{
+  "name": "innora-test-task",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "serve": "npx serve -s build",
+    "docker:build": "docker build -t innora-test-task-image .",
+    "docker:run": "docker run --name innora-test-task-container -p 3000:3000 innora-test-task-image"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.0",
+    "react-router-dom": "^6.13.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.63.4",
+    "serve": "^14.2.2",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@types/react-redux": "^7.1.25"
+  }
+}

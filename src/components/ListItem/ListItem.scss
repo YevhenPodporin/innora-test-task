@@ -1,0 +1,26 @@
+.list-item{
+  z-index: 1;
+  border: 1px solid #1F2937;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 10px #7C7C7C;
+  h4{
+    text-align: center;
+  }
+  .content{
+    flex: 1 1 auto;
+  }
+  .actions{
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.3s;
+    .remove-icon{
+      cursor: pointer;
+      &:active{
+        transform: scale(0.7);
+      }
+    }
+  }
+}

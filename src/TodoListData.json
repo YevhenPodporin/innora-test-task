@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "delectus aut autem",
+    "description": "A beautiful sunrise over the mountains"
+  },
+  {
+    "id": 2,
+    "title": "quis ut nam facilis",
+    "description": "A walk in the park on a sunny day"
+  },
+  {
+    "id": 3,
+    "title": "fugiat veniam minus",
+    "description": "The sound of rain on the roof"
+  },
+  {
+    "id": 4,
+    "title": "et porro tempora",
+    "description": "A cozy night by the fireplace"
+  },
+  {
+    "id": 5,
+    "title": "laboriosam mollitia",
+    "description": "A cat napping on a sunny windowsill"
+  },
+  {
+    "id": 6,
+    "title": "qui ullam ratione quibusdam ",
+    "description": "A dog chasing a frisbee in the park"
+  },
+  {
+    "id": 7,
+    "title": "illo expedita consequatur quia in",
+    "description": "A bustling city street at night"
+  },
+  {
+    "id": 8,
+    "title": "quo adipisci enim quam ut ab",
+    "description": "A quiet forest in the early morning"
+  },
+  {
+    "id": 9,
+    "title": "molestiae perspiciatis ipsa",
+    "description": "A beach with gentle waves crashing"
+  },
+  {
+    "id": 10,
+    "title": "illo est ratione doloremque",
+    "description": "A starry night sky with a full moon"
+  }
+]
